@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="szin.css" rel="stylesheet" />-->
+    <link href="szin.css" rel="stylesheet" />
+    <link href="toast.css" rel="stylesheet" />
+    <title>Kártyák</title>
+
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#-1">About</a></li>
+                <li><a href="#-2">Skills</a></li>
+                <li><a href="#-3">Education</a></li>
+                <li><a href="#-4">Education</a></li>
+                <li><a href="#-5">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fo-toast">
+        <div class="toast">
+            <div class="toast-header">
+                <div class="kep2">
+                    <img src="en.jpg" alt="Alternate Text" width="5%" height="5%" />
+                </div>
+                <button class="close" onclick="this.parentNode.parentNode.classList.add('close')">X</button>
+            </div>
+            <div class="toast-body">
+                <p>Tóth Leila Anasztázia vagyok, A Gépészetibe járok</p>
+                <p>Ezek itt a munkáim</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toast = document.querySelector('.toast');
+
+        toast.classList.add('show');
+
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 5000);
+    </script>
+    <div id="kozep">
+
+        <div id="card">
+            <img width="100%" src="2.jpg" id="kep" alt="2">
+            <div id="kartya-szoveg">
+                <h3> Blog </h3>
+                <h2>MUNKA KÖZBEN FELFEDEZNI A VILÁGOT?</h2>
+                <p>A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                <a href="https://kaptarbudapest.hu/aktualitasok/blog/munka-kozben-felfedezni-a-vilagot/" id="tovabb">TOVÁBB</a>
+
+            </div>
+        </div>
+        <div id="card">
+            <img width="100%" src="3.jpg" id="kep" alt="1">
+            <div id="kartya-szoveg">
+                <h3>Események</h3>
+                <h2>MONDAY MOMENTUM ▶️ HÉTFŐNKÉNT</h2>
+                <p>A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                <a href="https://kaptarbudapest.hu/aktualitasok/esemenyek/monday-momentum-%e2%96%b6%ef%b8%8f-hetfonkent/" id="tovabb">JELENTKEZEM</a>
+
+            </div>
+        </div>
+        <div id="card">
+            <img width="100%" src="1.jpg" id="kep" alt="1">
+            <div id="kartya-szoveg">
+                <H3>Ajánlatok</H3>
+                <h2>PRIVÁT IRODA A BELVÁROSBAN!</h2>
+                <p>A digital nomád életstílus évek óta egyre népszerűbb, és ez</p>
+                <a href="https://kaptarbudapest.hu/aktualitasok/ajanlatok/privat-iroda-a-belvarosban/" id="tovabb">TOVÁBB</a>
+
+            </div>
+        </div>
+    </div>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+</body>
+</html>

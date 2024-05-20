@@ -1,0 +1,160 @@
+#kozep {
+    display: flex;
+    justify-content: center;
+}
+
+#card {
+    margin-top: 120px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.445);
+    width: 20%;
+    margin-right: 2%;
+}
+
+#kartya-szoveg {
+    padding-left: 15px;
+    padding-right: 35px;
+    padding-bottom: 5px;
+    padding-bottom: 50px;
+}
+
+h3 {
+    font-size: small;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(255, 242, 0);
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: large;
+}
+
+#tovabb {
+    font-size: small;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    transition: background-color 0.3s ease;
+}
+
+    #tovabb:hover {
+        background-color: black;
+        color: white;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#kep {
+    width: 100%;
+}
+
+#kep1 {
+    width: 100%;
+}
+
+nav {
+    background-color: #FFC100;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+    ul li {
+        text-decoration: none;
+        margin: 0 0.75em 0 .075em;
+    }
+
+    ul:hover a:hover {
+        color: silver;
+    }
+
+    ul:hover a:hover {
+        color: dimgrey;
+        box-shadow: 0 2px 0 0 currentColor;
+    }
+    
+nav ul {
+     display: flex;
+     list-style: none;
+     box-shadow: 0 15px 40px #000;
+     justify-content: center;
+}
+
+nav ul li {
+     position: relative;
+     padding: 20px;
+     cursor: pointer;
+ transition: .5s;
+}
+ 
+nav ul li:after {
+       z-index: -2;
+       filter: blur(20px);
+}
+
+nav ul li:hover:before,
+nav ul li:hover:after {
+       transform: scaleY(1);
+}
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+.toast {
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    padding: 20px;
+    background-color: #CA8787;
+    color: black;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+    .toast.show {
+        opacity: 1;
+    }
+
+    .toast.close {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+.toast-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+    .toast-header h4 {
+        margin: 0;
+    }
+
+    .toast-header button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+.toast-body {
+    font-size: 16px;
+}
